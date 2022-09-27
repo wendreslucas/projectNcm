@@ -1,8 +1,10 @@
 import express, { Request, Response } from 'express';
+import connectToDatabase from './database';
 const app = express();
 const PORT = process.env.PORT || 8080;
 const cors = require('cors');
 
+connectToDatabase();
 app.use(cors());
 app.use(express.json());
 

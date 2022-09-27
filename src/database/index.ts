@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 function connectToDatabase() {
   mongoose
-    .connect(process.env.MONGO_URL)
+    .connect(process.env.URL_MONGO)
     .then((data) => {
       console.log('Mongoose Connected');
     })
@@ -12,7 +12,7 @@ function connectToDatabase() {
     });
   const database = mongoose.connection;
   database.on('error', (err) => console.error(err.message));
-  // database.once('open', () => console.log('Connected to database))
+  database.once('open', () => console.log('Connected to database'));
 }
 
 export default connectToDatabase;
