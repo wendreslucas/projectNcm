@@ -2,7 +2,7 @@
   "name": "ncmproject",
   "version": "1.0.0",
   "description": "Projeto NCMs",
-  "main": ".eslintrc.js",
+  "main": ".index.ts",
   "scripts": {
     "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts",
