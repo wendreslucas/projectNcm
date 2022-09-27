@@ -1,14 +1,16 @@
 import express, { Request, Response } from 'express';
-import connectToDatabase from './database';
-import router from './routes/router';
+import connectToDatabase from './src/database';
+import router from './src/routes/router';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 const cors = require('cors');
+const product = require('./api/product');
 
 connectToDatabase();
 app.use(cors());
 app.use(express.json());
+app.use('/api/product', product);
 app.use(router);
 
 app.listen(PORT, () => {
