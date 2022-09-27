@@ -21,7 +21,7 @@ const ncmSchema: Schema = new mongoose.Schema(
     },
     tipo_ato: {
       type: String,
-      required: 'Insira o tipo do ato',
+      required: 'Insira um ATO',
     },
     numero_ato: {
       type: String,

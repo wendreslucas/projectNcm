@@ -8,7 +8,7 @@ const saveDataNcm = (req: Request) => {
     descricao,
     data_inicio,
     data_fim,
-    tip_ato,
+    tipo_ato,
     numero_ato,
     ano_ato,
   } = req.body;
@@ -18,7 +18,7 @@ const saveDataNcm = (req: Request) => {
     descricao,
     data_inicio,
     data_fim,
-    tip_ato,
+    tipo_ato,
     numero_ato,
     ano_ato,
   });

@@ -1,3 +1,3 @@
 import getAllData from './getAllData-repository';
-
-export { getAllData };
+import saveData from './saveData-repository';
+export { getAllData, saveData };
