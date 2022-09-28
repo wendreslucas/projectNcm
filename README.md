@@ -35,9 +35,3 @@ yarn start
 ```
 
 GET /ncms
-
-```
-
-
-
-```
