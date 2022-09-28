@@ -27,7 +27,7 @@ yarn start
 
 ## NCMs
 
-#### Retorna os NCMs limite de 20 por.
+#### Retorna os NCMs limite de 20 .
 
 ```
 
