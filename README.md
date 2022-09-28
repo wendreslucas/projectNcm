@@ -16,12 +16,9 @@ ou
 npm install
 ```
 
-```
-
 Depois de devidamente instaladas, basta executar:
 
 ```
-
 yarn start
 
 ```
@@ -35,3 +32,4 @@ yarn start
 ```
 
 GET /ncms
+```
