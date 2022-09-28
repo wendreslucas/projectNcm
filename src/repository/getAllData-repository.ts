@@ -2,7 +2,7 @@ import Data from '../models';
 import { Request } from 'express';
 
 const getAllDataNcm = (req: Request) => {
-  return Data.ncm.find({});
+  return Data.ncm.find({}).limit(50);
 };
 
 export default { getAllDataNcm };
